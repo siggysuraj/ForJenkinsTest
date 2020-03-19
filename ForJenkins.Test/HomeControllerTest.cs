@@ -1,6 +1,7 @@
 using ForJenkins.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Web.Mvc;
 
 namespace ForJenkins.Test
 {
@@ -14,7 +15,7 @@ namespace ForJenkins.Test
            HomeController controller = new HomeController();
 
             // Act
-            ViewResult result = controller.Index() as ViewResult;
+            System.Web.Mvc.ViewResult result = controller.Index() as System.Web.Mvc.ViewResult;
 
             // Assert
             Assert.IsNotNull(result);
