@@ -18,5 +18,9 @@
   <ItemGroup>
     <ProjectReference Include="..\ForJenkins\ForJenkins.csproj" />
   </ItemGroup>
+    
+    <Target Name="BuildTarget">
+<Message Text="Build selected" Importance="high"/>
+</Target>
 
 </Project>
