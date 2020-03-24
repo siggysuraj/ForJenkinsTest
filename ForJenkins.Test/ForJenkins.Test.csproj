@@ -8,12 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.1.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
     <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
+=======
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions Version=2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core Version=2.1.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk Version=15.9.0" />
+    <PackageReference Include="MSTest.TestAdapter Version=1.3.2" />
+    <PackageReference Include="MSTest.TestFramework Version=1.3.2" />
+>>>>>>> 7adada77ab474a78a88fce5881e01797a4730264
   </ItemGroup>
 
   <ItemGroup>
@@ -25,5 +33,8 @@
       <HintPath>..\..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.viewfeatures\2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll</HintPath>
     </Reference>
   </ItemGroup>
-
+<Target Name="BuildTarget">
+<Message Text="Build selected" Importance="high"/>
+</Target>
+    
 </Project>
