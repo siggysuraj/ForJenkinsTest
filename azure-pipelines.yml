@@ -29,3 +29,8 @@ steps:
               !**\*TestAdapter.dll
               !**\obj\**
             searchFolder: '$(System.DefaultWorkingDirectory)'
+
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
