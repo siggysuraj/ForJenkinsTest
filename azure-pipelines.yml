@@ -16,11 +16,11 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-steps:
+
     - task: VSBuild@1
       inputs:
         solution: '**\*.sln'
-steps:
+
         - task: VSTest@2
           inputs:
             testSelector: 'testAssemblies'
